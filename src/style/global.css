@@ -1,4 +1,6 @@
 /*? global clearing */
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+
 *,
 html,
 body {
@@ -15,14 +17,14 @@ body {
 }
 
 body {
-    background-color: var(--dark);
+    background-color: var(--light);
     color: var(--light);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav {
     overflow: hidden;
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 nav a {
@@ -49,6 +51,16 @@ nav .icon {
     display: none;
 }
 
+nav #nav-title {
+    color: #2E2E2E;
+    font-family: Plaster;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -72,7 +84,7 @@ nav .icon {
     background-color: tomato;
     color: var(--light);
 }
-
+/* 
 .glowingTitle {
     font-size: 2.2rem;
     font-weight: 700;
@@ -81,7 +93,7 @@ nav .icon {
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glowingTitle 1s ease-in-out infinite alternate;
-}
+} */
 
 @media screen and (max-width: 600px) {
     nav a:not(:first-child) {display: none;}
