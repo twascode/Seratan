@@ -1,5 +1,6 @@
 /*? global clearing */
 @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 html,
@@ -59,6 +60,44 @@ nav #nav-title {
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
+}
+#about{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 100px;
+}
+#about h5{
+    color: #B1B1B1;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#about p{
+    color: #2E2E2E;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* margin-left: 20px; */
+}
+#about span{
+    color: #2E2E2E;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    /* margin-right: 60px; */
+}
+#about img{
+    width: 640px;
+    height: 640px;
+    flex-shrink: 0;
+    border-radius: 30px;
 }
 
 .container {
