@@ -1,6 +1,7 @@
 /*? global clearing */
-@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chelsea+Market&display=swap');
+
 
 *,
 html,
@@ -54,51 +55,98 @@ nav .icon {
 
 nav #nav-title {
     color: #2E2E2E;
-    font-family: Plaster;
+    font-family: "Rosie Brown Serif Demo";
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
 }
-#about{
+
+         /* About Section */
+
+.about{
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 100px;
 }
-#about h5{
+
+.about h5{
     color: #B1B1B1;
-    font-family: Raleway;
-    font-size: 20px;
+    font-family: "Chelsea Market";
+    font-size: 24px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
+    letter-spacing: -0.72px;
+}
+.about #baris2 h2{
+    color: #000;
+    font-family: "Chelsea Market";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.about #baris2 h5{
+color: #B1B1B1;
+text-align: center;
+font-family: "Chelsea Market";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
-#about p{
-    color: #2E2E2E;
-    font-family: Raleway;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /* margin-left: 20px; */
+.about #baris3{
+    margin-top: 60px;
 }
-#about span{
+
+.about p{
     color: #2E2E2E;
-    font-size: 48px;
+    font-family: "Chelsea Market";
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
+    letter-spacing: -0.72px;
+}
+.about span{
+    color: #2E2E2E;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2E2E2E;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 72px */
     text-transform: capitalize;
-    /* margin-right: 60px; */
 }
-#about img{
+.about img{
     width: 640px;
     height: 640px;
     flex-shrink: 0;
     border-radius: 30px;
 }
+.about #baris5{
+    margin-top: 40px;
+}
+.about #minimalism{
+    color: #F4F4F4;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    text-transform: capitalize;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2E2E2E;
+    
+}
+
+         /* End About Section */
+
 
 .container {
     display: flex;
