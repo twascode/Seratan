@@ -70,6 +70,10 @@ nav #nav-title {
     margin-right: 80px;
     margin-top: 100px;
 }
+.about .row{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
 .about h5{
     color: #B1B1B1;
