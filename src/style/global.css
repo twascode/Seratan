@@ -58,6 +58,10 @@ nav #nav-title {
   height: 122vh;
   background-image: url(../assets/images/hero.svg);
 }
+.about .row{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
 #hero-item {
   margin-top: 20vh;
