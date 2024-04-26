@@ -58,9 +58,10 @@ nav #nav-title {
   height: 122vh;
   background-image: url(../assets/images/hero.svg);
 }
-.about .row{
+section .row{
     margin-top: 80px;
     margin-bottom: 80px;
+    
 }
 
 #hero-item {
@@ -69,13 +70,13 @@ nav #nav-title {
 
 /* About Section */
 
-.about {
+#about {
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 100px;
 }
 
-.about h5 {
+#about h5 {
   color: #b1b1b1;
   font-family: "Chelsea Market";
   font-size: 24px;
@@ -84,7 +85,50 @@ nav #nav-title {
   line-height: normal;
   letter-spacing: -0.72px;
 }
-.about #baris2 h2 {
+#about p {
+    color: #2e2e2e;
+    font-family: "Chelsea Market";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+  }
+  #about span {
+    color: #2e2e2e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2e2e2e;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 72px */
+    text-transform: capitalize;
+  }
+  #about img {
+    width: 640px;
+    height: 640px;
+    flex-shrink: 0;
+    border-radius: 30px;
+  }
+
+  #about #minimalism {
+    color: #f4f4f4;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    text-transform: capitalize;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2e2e2e;
+  }
+
+/* End About Section */
+
+/* testimonial section */
+
+#testimonial h2 {
   color: #000;
   font-family: "Chelsea Market";
   font-size: 128px;
@@ -93,7 +137,7 @@ nav #nav-title {
   line-height: normal;
   text-align: center;
 }
-.about #baris2 h5 {
+#testimonial h5 {
   color: #b1b1b1;
   text-align: center;
   font-family: "Chelsea Market";
@@ -103,67 +147,70 @@ nav #nav-title {
   line-height: normal;
 }
 
-.about #baris3 {
+/* End testimonial Section */
+
+/* asal_rotan section */
+
+#asal_rotan {
   margin-top: 60px;
 }
 
-.about p {
-  color: #2e2e2e;
-  font-family: "Chelsea Market";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.72px;
+#asal_rotan h5 {
+    color: #b1b1b1;
+    font-family: "Chelsea Market";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
 }
-.about span {
-  color: #2e2e2e;
+#asal_rotan span{
+    color: #2e2e2e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2e2e2e;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 72px */
+    text-transform: capitalize;
+}
+#asal_rotan #minimalism{
+    color: #f4f4f4;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    text-transform: capitalize;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2e2e2e;
+}
+
+/* end of asal_rotan section */
+
+/* customize section */
+
+#customize .typogrph {
+color: #2E2E2E;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #2E2E2E;
+font-family: "Bebas Neue";
+font-size: 78px;
+font-style: normal;
+font-weight: 400;
+line-height: 90%; /* 70.2px */
+text-transform: capitalize;
+}
+
+#customize .typogrph #white {
+  color: #f4f4f4;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #2e2e2e;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 72px */
-  text-transform: capitalize;
-}
-.about img {
-  width: 640px;
-  height: 640px;
-  flex-shrink: 0;
-  border-radius: 30px;
-}
-.about #baris5 {
-  margin-top: 40px;
-}
-.about #minimalism {
-  color: #f4f4f4;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  text-transform: capitalize;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2e2e2e;
 }
 
-.typogrph {
-  font-family: "Bebas Neue";
-  font-size: 78px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  text-transform: capitalize;
-}
 
-.typogrph #white {
-  color: #f4f4f4;
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #2e2e2e;
-}
-
-.special-order-bg {
+#customize .special-order-bg {
   background-image: url(../assets/images/spesial-order.svg);
   height: 120vh;
   background-repeat: no-repeat;
@@ -171,8 +218,50 @@ nav #nav-title {
   background-size: auto 100%;
   border-radius: 30px;
 }
+/* end of customize  section */
 
-/* End About Section */
+/* grow section */
+#grow {
+    margin-top: 40px;
+  }
+#grow span{
+    color: #2E2E2E;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #2E2E2E;
+font-family: "Bebas Neue";
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: 90%; /* 72px */
+text-transform: capitalize;
+}
+
+#grow #minimalism{
+    color: #f4f4f4;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    text-transform: capitalize;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2e2e2e;
+}
+#grow h5{
+    color: #B1B1B1;
+font-family: "Chelsea Market";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.72px;
+}
+#grow img{
+    width: 640px;
+height: 640px;
+flex-shrink: 0;
+}
+/* end of grow section */
 
 .container {
   display: flex;
