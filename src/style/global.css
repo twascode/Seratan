@@ -25,7 +25,7 @@ body {
 }
 
 nav {
-  height: 10vh;
+  height: 13vh;
   background-color: var(--light);
 }
 
@@ -58,22 +58,12 @@ nav #nav-title {
   height: 122vh;
   background-image: url(../assets/images/hero.svg);
 }
-/* section .row {
-  margin-top: 80px;
-  margin-bottom: 80px;
-} */
 
 #hero-item {
   margin-top: 20vh;
 }
 
 /* About Section */
-
-#about {
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 100px;
-}
 
 #about h5 {
   color: #b1b1b1;
@@ -214,7 +204,7 @@ nav #nav-title {
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #2e2e2e;
   font-family: "Bebas Neue";
-  font-size: 90px;
+  font-size: 92px;
   font-style: normal;
   font-weight: 400;
   text-transform: capitalize;
@@ -231,13 +221,17 @@ nav #nav-title {
   height: 120vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto 100%;
+  background-size: auto 97%;
   border-radius: 30px;
+}
+
+#customize .special-order-bg .content {
+  margin-left: 4vh;
 }
 
 .special-order-bg .subtitle {
   margin-top: -20px;
-  width: 50%;
+  width: 48%;
   color: #b1b1b1;
   font-family: "Chelsea Market";
   font-size: 26px;
@@ -245,6 +239,7 @@ nav #nav-title {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.66px;
+  margin-bottom: 25px;
 }
 
 #order {
@@ -310,14 +305,6 @@ nav #nav-title {
   flex-shrink: 0;
 }
 /* end of grow section */
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: var(--gap-primary);
-}
 
 /* 
 .glowingTitle {
