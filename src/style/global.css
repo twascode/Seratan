@@ -417,6 +417,22 @@ nav #nav-title {
 }
 /* end of grow section */
 
+/* Footer section */
+
+#footer .desc {
+  font-size: 1.45vw;
+  color: #b1b1b1;
+}
+
+#footer .subtitle {
+  color: #2e2e2e;
+  font-size: 1.45vw;
+}
+
+#footer hr {
+  border: 1px solid #b1b1b1;
+}
+
 /* 
 .glowingTitle {
     font-size: 2.2rem;
@@ -427,6 +443,34 @@ nav #nav-title {
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glowingTitle 1s ease-in-out infinite alternate;
 } */
+
+.copyright {
+  color: #b1b1b1;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+}
+
+.font-chelsea {
+  font-family: "Chelsea Market";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-button {
+  text-decoration: none;
+  font-size: 1.45vw;
+  color: #b1b1b1;
+}
+
+.text-button:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+.text-button:active {
+  color: #000;
+}
 
 .button {
   color: #2e2e2e;
