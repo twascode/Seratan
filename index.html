@@ -18,6 +18,8 @@
     <!-- Assets -->
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="./src/style/global.css" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/fullpage.css" />
+    
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,25 +33,31 @@
     <!-- css code file -->
 
   </head>
+  <style>
+    .fp-watermark{
+      display: none;
+    }
+  </style>
 
 <body>
   <div class="custom-cursor"></div>
 
 
-  <nav class=" d-flex align-items-center justify-content-center position-relative">
+  <!-- <nav class=" d-flex align-items-center justify-content-center position-relative">
     <a href="#" class="d-flex align-items-center text-dark text-decoration-none text-center">
       <p class="mb-0" id="nav-title">
         <img src="./src/assets/images/Seratan.svg" alt="seratan-logo">
       </p>
     </a>
-  </nav>
+  </nav> -->
 
 
 
 
   <!-- hero section -->
 
-  <section id="hero" class="mb-5">
+  <div id="fullpage">
+    <section id="hero" class="section">
     <div class="hero">
       <div class="container-fluid items">
         <div class="row">
@@ -63,7 +71,7 @@
 
   <!-- card item section -->
 
-  <section id="items" class="d-flex justify-content-center my-5 mx-5 py-5">
+  <section id="items" class="section ">
     <div class="container-fluid">
       <h5 class="items-heading">
         Best Product <img src="./src/assets/images/Vector 1.svg" alt=""
@@ -104,7 +112,7 @@
 
   <!-- about section -->
 
-  <section id="about" class="d-flex justify-content-center my-5 mx-5 py-5">
+  <section id="about" class="section d-flex justify-content-center my-5 mx-5 py-5">
     <div class="container-fluid">
       <div class="row">
         <h5>
@@ -125,15 +133,6 @@
           </p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-
-  <!-- testimonial section -->
-
-  <section id="testimonial" class="my-5 py-5 px-4">
-    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
           <h2>1k+</h2>
@@ -151,10 +150,33 @@
     </div>
   </section>
 
+  <!-- end about section -->
+
+  <!-- testimonial section -->
+
+  <!-- <section id="testimonial" class="section my-5 py-5 px-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>1k+</h2>
+          <h5>products that have been made <br> and sold domestically and <br> internationally</h5>
+        </div>
+        <div class="col-md-4">
+          <h2>700+</h2>
+          <h5>Trusted client and loyal <br> customers buy our product</h5>
+        </div>
+        <div class="col-md-4">
+          <h2>50+</h2>
+          <h5>Ships containing rattan that we <br> successfully export every month</h5>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
   <!-- end of testimonial section -->
 
   <!-- distribution section -->
-  <section id="distribution" class="my-5 py-5">
+  <section id="distribution" class="section my-5 py-5">
     <div class="container-fluid">
       <div class="row">
         <div class="distribution-bg">
@@ -173,7 +195,7 @@
 
   <!-- asal_rotan section -->
 
-  <section id="asal_rotan" class="my-5 py-5 ps-5">
+  <section id="asal_rotan" class="section my-5 py-5 ps-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 d-flex justify-content-center ps-5">
@@ -196,7 +218,7 @@
 
   <!-- customize section -->
 
-  <section id="customize" class="my-5 py-5">
+  <section id="customize" class="section my-5 py-5">
     <div class="mt-5 container-fluid">
       <div class="special-order-bg">
         <div class="content  text-center">
@@ -218,7 +240,7 @@
 
   <!-- grow section -->
 
-  <section id="grow">
+  <section id="grow" class="section ">
     <div class="container-fluid my-5 py-5 px-5">
       <div class="row">
         <div class="col-md-6 py-5 my-5 ps-5">
@@ -244,7 +266,7 @@
 
   <!-- footer section -->
 
-  <section id="footer">
+  <section id="footer" class="section ">
     <footer class="mx-5 my-2 py-5 px-3">
       <img src="./src/assets/images/Seratan.svg" alt="seratan-logo" width="18%">
       <div class="row  mt-4">
@@ -303,10 +325,13 @@
       <p class="font-chelsea copyright text-center mt-3">© 2024 Copyright TWAS Team. All rights reserved.</p>
     </footer>
   </section>
+  </div>
 
 
 
   <!-- 👇 javascript code file 👇 -->
+  <script type="text/javascript" src="./node_modules/fullpage.js/dist/fullpage.js"></script>
+  <script src="./node_modules/fullpage.js/vendors/easings.js"></script>
   <script src="./src/js/index.js"></script>
   <script>
   </script>

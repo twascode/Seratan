@@ -5,36 +5,6 @@ take a look at click listener on the button, you will see "babypack".
 change it to "starterpack". 
 done!
 */
-
-console.log('javascript ready...')
-
-//! Responsive Navigation BAR 🎉
-const showMobileNav = () => {
-  var navbar = document.getElementById("navbar");
-  navbar.className === "navibar" ? navbar.className += " responsive" : navbar.className = "navibar"
-}
-
-//! Notification Bell 
-const notification = (pack) => {
-    alert('notification checking..., please click OK to continue')
-    return new Promise((success, failed) => {
-        if (pack != "starterpack") failed("your pack is not starterpack, please read the notes on js file")
-        setTimeout(() => {
-            success("Notification Success! 👏")
-        }, 1200)
-    })
-}
-
-//! asynchronous trigger for notification bell
-async function showPopup(params) {
-    try {
-        const popup = await notification(params);
-        alert(popup)
-    } catch (err) {
-        alert(err)
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function(event) {
     var cursor = document.querySelector(".custom-cursor");
     var links = document.querySelectorAll("a");
@@ -76,3 +46,59 @@ document.addEventListener("DOMContentLoaded", function(event) {
       initCursor = false;
     };
   });
+
+console.log('javascript ready...')
+
+//! Responsive Navigation BAR 🎉
+const showMobileNav = () => {
+  var navbar = document.getElementById("navbar");
+  navbar.className === "navibar" ? navbar.className += " responsive" : navbar.className = "navibar"
+}
+
+//! Notification Bell 
+const notification = (pack) => {
+    alert('notification checking..., please click OK to continue')
+    return new Promise((success, failed) => {
+        if (pack != "starterpack") failed("your pack is not starterpack, please read the notes on js file")
+        setTimeout(() => {
+            success("Notification Success! 👏")
+        }, 1200)
+    })
+}
+
+//! asynchronous trigger for notification bell
+async function showPopup(params) {
+    try {
+        const popup = await notification(params);
+        alert(popup)
+    } catch (err) {
+        alert(err)
+    }
+}
+
+// $(document).ready(function() {
+//     $('#fullpage').fullpage({
+//         //options here
+//         autoScrolling:true,
+//         scrollHorizontally: true,    
+//         anchors: ['section1', 'section2','section3']
+//     });
+
+//     //methods
+//     $.fn.fullpage.setAllowScrolling(false);
+// });
+new fullpage('#fullpage', {
+  //options here
+  scrollBar: true,
+  navigation: false,
+  anchors: ['section1', 'section2','section3']
+  // afterLoad: function(origin, destination, direction){
+  //     console.log(`after load ${destination.index}, direction=${direction}` )
+  // },
+  // onLeave: function(origin, destination, direction){
+  //      console.log(`on leave ${destination.index}, direction=${direction}` );
+  // 		if(destination.index == 3 && direction=='down'){
+  //       showPopup('starterpack');
+  //   	}
+  // }
+})
