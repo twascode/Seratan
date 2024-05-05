@@ -115,6 +115,17 @@ nav #nav-title {
   text-transform: capitalize;
 }
 
+.product a {
+  color: #000;
+  text-decoration: 0;
+}
+
+.product a:hover {
+  color: #000;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
 .product-title {
   color: #2e2e2e;
   font-family: "Bebas Neue";
@@ -193,11 +204,7 @@ nav #nav-title {
   -webkit-text-stroke-color: #2e2e2e;
 }
 
-/* End About Section */
-
-/* testimonial section */
-
-#testimonial h2 {
+#about .title {
   color: #000;
   font-family: "Chelsea Market";
   font-size: 128px;
@@ -206,7 +213,7 @@ nav #nav-title {
   line-height: normal;
   text-align: center;
 }
-#testimonial h5 {
+#about .desc {
   color: #b1b1b1;
   text-align: center;
   font-family: "Chelsea Market";
@@ -215,6 +222,10 @@ nav #nav-title {
   font-weight: 400;
   line-height: normal;
 }
+
+/* End About Section */
+
+/* testimonial section */
 
 /* End testimonial Section */
 

@@ -42,8 +42,8 @@
 <body>
   <div class="custom-cursor"></div>
 
-
-  <!-- <nav class=" d-flex align-items-center justify-content-center position-relative">
+<!-- 
+  <nav class=" d-flex align-items-center justify-content-center position-fixed z-2 w-100 bg-white">
     <a href="#" class="d-flex align-items-center text-dark text-decoration-none text-center">
       <p class="mb-0" id="nav-title">
         <img src="./src/assets/images/Seratan.svg" alt="seratan-logo">
@@ -71,7 +71,7 @@
 
   <!-- card item section -->
 
-  <section id="items" class="section ">
+  <section id="items" class="section px-5">
     <div class="container-fluid">
       <h5 class="items-heading">
         Best Product <img src="./src/assets/images/Vector 1.svg" alt=""
@@ -85,26 +85,34 @@
           <a href="#" class="button">See All Product</a>
         </div>
       </div>
-      <div class="row mt-4">
+      <div class="product row mt-4">
         <div class="col-md-3">
-          <img src="./src/assets/images/bangku.webp" alt="" class="product-card">
-          <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
-          <p class="mx-3">Chairs</p>
+          <a href="" >
+            <img src="./src/assets/images/bangku.webp" alt="" class="product-card">
+            <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
+            <p class="mx-3">Chairs</p>
+          </a>
         </div>
         <div class="col-md-3">
-          <img src="./src/assets/images/meja.webp" alt="" class="product-card">
-          <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
-          <p class="mx-3">Table</p>
+          <a href="">
+            <img src="./src/assets/images/meja.webp" alt="" class="product-card">
+            <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
+            <p class="mx-3">Table</p>
+          </a>
         </div>
         <div class="col-md-3">
-          <img src="./src/assets/images/laci.webp" alt="" class="product-card">
-          <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
-          <p class="mx-3">Cabinets</p>
+          <a href="">
+            <img src="./src/assets/images/laci.webp" alt="" class="product-card">
+            <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
+            <p class="mx-3">Cabinets</p>
+          </a>
         </div>
         <div class="col-md-3">
-          <img src="./src/assets/images/kursi.webp" alt="" class="product-card">
-          <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
-          <p class="mx-3">Chairs</p>
+          <a href="">
+            <img src="./src/assets/images/kursi.webp" alt="" class="product-card">
+            <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
+            <p class="mx-3">Chairs</p>
+          </a>
         </div>
       </div>
     </div>
@@ -112,9 +120,9 @@
 
   <!-- about section -->
 
-  <section id="about" class="section d-flex justify-content-center my-5 mx-5 py-5">
+  <section id="about" class="section px-5">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row d-flex justify-content-center my-5 mx-5 py-5">
         <h5>
           About us <img src="./src/assets/images/Vector 1.svg" alt=""
             style="width: 60px; height:auto; margin-left: 14px;">
@@ -133,18 +141,18 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row d-flex justify-content-center my-5 mx-5 py-5">
         <div class="col-md-4">
-          <h2>1k+</h2>
-          <h5>products that have been made <br> and sold domestically and <br> internationally</h5>
+          <h2 class="title">1k+</h2>
+          <p class="desc">products that have been made <br> and sold domestically and <br> internationally</p>
         </div>
         <div class="col-md-4">
-          <h2>700+</h2>
-          <h5>Trusted client and loyal <br> customers buy our product</h5>
+          <h2 class="title">700+</h2>
+          <p class="desc">Trusted client and loyal <br> customers buy our product</p>
         </div>
         <div class="col-md-4">
-          <h2>50+</h2>
-          <h5>Ships containing rattan that we <br> successfully export every month</h5>
+          <h2 class="title">50+</h2>
+          <p class="desc">Ships containing rattan that we <br> successfully export every month</p>
         </div>
       </div>
     </div>
@@ -176,12 +184,12 @@
   <!-- end of testimonial section -->
 
   <!-- distribution section -->
-  <section id="distribution" class="section my-5 py-5">
+  <section id="distribution" class="section">
     <div class="container-fluid">
       <div class="row">
-        <div class="distribution-bg">
-          <div class="content">
-            <div class="typogrph mt-3 pt-5 px-5 pb-4">
+        <div class="distribution-bg d-flex flex-column justify-content-center">
+          <div class="content px-5">
+            <div class="typogrph pt-5 px-5 pb-4">
               <span id="white">SERATAN </span><br><span id="blue">DISTRIBUTION</span>
             </div>
             <p class="px-5">Not only ready-made furniture, we also distribute a lot of raw rattan to big countries,
@@ -312,13 +320,13 @@
         </div>
 
         <div class="col-md-7 d-flex justify-content-between align-items-center">
-          <a href="#" class="font-chelsea text-button">Home</a>
-          <a href="#" class="font-chelsea text-button">Product</a>
-          <a href="#" class="font-chelsea text-button">About Us</a>
-          <a href="#" class="font-chelsea text-button">Distribution</a>
-          <a href="#" class="font-chelsea text-button">Quality</a>
-          <a href="#" class="font-chelsea text-button">Order</a>
-          <a href="#" class="font-chelsea text-button">Grow</a>
+          <a href="#section1" class="font-chelsea text-button">Home</a>
+          <a href="#section2" class="font-chelsea text-button">Product</a>
+          <a href="#section3" class="font-chelsea text-button">About Us</a>
+          <a href="#section4" class="font-chelsea text-button">Distribution</a>
+          <a href="#section5" class="font-chelsea text-button">Quality</a>
+          <a href="#section6" class="font-chelsea text-button">Order</a>
+          <a href="#section7" class="font-chelsea text-button">Grow</a>
         </div>
       </div>
       <hr class="solid mt-5">
