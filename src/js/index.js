@@ -90,15 +90,10 @@ async function showPopup(params) {
 new fullpage('#fullpage', {
   //options here
   scrollBar: true,
-  navigation: false,
-  anchors: ['section1', 'section2','section3','section4','section5','section6','section7','section8']
-  // afterLoad: function(origin, destination, direction){
-  //     console.log(`after load ${destination.index}, direction=${direction}` )
-  // },
-  // onLeave: function(origin, destination, direction){
-  //      console.log(`on leave ${destination.index}, direction=${direction}` );
-  // 		if(destination.index == 3 && direction=='down'){
-  //       showPopup('starterpack');
-  //   	}
-  // }
+  navigation: true,
+  anchors: ['section1', 'section2','section3','section4','section5','section6','section7','section8'],
+  // navigationTooltips: ['Home','About Us', 'tes'],
+  showActiveTooltip: true,
+  scrollingSpeed: 250,
+
 })
