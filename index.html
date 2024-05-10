@@ -19,7 +19,6 @@
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="./src/style/global.css" />
     <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/fullpage.css" />
-    
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +33,7 @@
 
   </head>
   <style>
-    .fp-watermark{
+    .fp-watermark {
       display: none;
     }
   </style>
@@ -42,127 +41,205 @@
 <body>
   <div class="custom-cursor"></div>
 
-<!-- 
-  <nav class=" d-flex align-items-center justify-content-center position-fixed z-2 w-100 bg-white">
-    <a href="#" class="d-flex align-items-center text-dark text-decoration-none text-center">
-      <p class="mb-0" id="nav-title">
-        <img src="./src/assets/images/Seratan.svg" alt="seratan-logo">
-      </p>
-    </a>
-  </nav> -->
-
-
-
+  <!-- <header  class="d-flex align-items-center justify-content-center position-fixed z-2 w-100 bg-white">
+    <nav class="d-flex align-items-center justify-content-center z-2 w-100 bg-white">
+      <a href="#" class="d-flex align-items-center text-dark justify-content-center text-decoration-none text-center">
+        <img src="./src/assets/images/Seratan.svg" width="70%" alt="seratan-logo">
+        
+      </a>
+    </nav>
+  </header> -->
 
   <!-- hero section -->
 
   <div id="fullpage">
     <section id="hero" class="section">
-    <div class="hero">
-      <div class="container-fluid items">
-        <div class="row">
-          <div class="col-7 d-flex justify-content-center">
-            <img src="src/assets/images/Frame 32.png" alt="" width="70%" id="hero-item">
+      <div class="hero">
+        <div class="container-fluid items">
+          <div class="row">
+            <div class="col-7 d-flex justify-content-center">
+              <img src="src/assets/images/Frame 32.png" alt width="70%" id="hero-item">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- card item section -->
+    <!-- card item section -->
+    <!-- mobile -->
+    <section id="items" class="section d-md-none d-block">
+      <div class="container-fluid">
 
-  <section id="items" class="section px-5">
-    <div class="container-fluid">
-      <h5 class="items-heading">
-        Best Product <img src="./src/assets/images/Vector 1.svg" alt=""
-          style="width: 60px; height:auto; margin-left: 14px;">
-      </h5>
-      <div class="row">
-        <div class="col-md-8">
-          <span>Our Best Product</span>
-        </div>
-        <div class="col-md-4 text-end">
-          <a href="#" class="button">See All Product</a>
+
+        <div class="product ">
+          <div class=" slide" data="slide1">
+            <h5 class="items-heading flex">
+              Best Product
+              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+            </h5>
+            <div class="">
+              <div class="">
+                <span class="heading">Our Best Chair</span>
+              </div>
+            </div>
+            <a href="">
+              <img src="./src/assets/images/bangku.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
+              <p class="mx-3">Chairs</p>
+            </a>
+          </div>
+          <div class=" slide " data="slide2">
+            <h5 class="items-heading flex">
+              Best Product
+              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+            </h5>
+            <div class="">
+              <div class="">
+                <span class="">Our Best Table</span>
+              </div>
+            </div>
+            <a href="">
+              <img src="./src/assets/images/meja.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
+              <p class="mx-3">Table</p>
+            </a>
+          </div>
+          <div class=" slide " data="slide3">
+            <h5 class="items-heading flex">
+              Best Product
+              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+            </h5>
+            <div class="">
+              <div class="">
+                <span class="">Our Best Cabinet</span>
+              </div>
+            </div>
+            <a href="">
+              <img src="./src/assets/images/laci.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
+              <p class="mx-3">Cabinets</p>
+            </a>
+          </div>
+          <div class=" slide" data="slide4">
+            <h5 class="items-heading flex">
+              Best Product
+              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+            </h5>
+            <div class="">
+              <div class="">
+                <span class="">Our Best Chair</span>
+              </div>
+            </div>
+            <a href="">
+              <img src=" ./src/assets/images/kursi.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
+              <p class="mx-3">Chairs</p>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="product row mt-4">
-        <div class="col-md-3">
-          <a href="" >
-            <img src="./src/assets/images/bangku.webp" alt="" class="product-card">
-            <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
-            <p class="mx-3">Chairs</p>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./src/assets/images/meja.webp" alt="" class="product-card">
-            <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
-            <p class="mx-3">Table</p>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./src/assets/images/laci.webp" alt="" class="product-card">
-            <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
-            <p class="mx-3">Cabinets</p>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./src/assets/images/kursi.webp" alt="" class="product-card">
-            <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
-            <p class="mx-3">Chairs</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- about section -->
-
-  <section id="about" class="section px-5">
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center my-5 mx-5 py-5">
-        <h5>
-          About us <img src="./src/assets/images/Vector 1.svg" alt=""
-            style="width: 60px; height:auto; margin-left: 14px;">
-        </h5>
-        <div class="col-md-6">
-          <span>For</span><br>
-          <span id="minimalism">Minimalism</span><br>
-          <span>Urban Life.</span>
-        </div>
-        <div class="col-md-6">
-          <p>
-            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;We are a rattan furniture brand from Cirebon 🇮🇩 who collaborates a lot
-            with local craftsmen and local designers. We believe that a good design should be easy to accept and
-            comfortable to enjoy. with that we were founded to create furniture that suits the needs of urban life -
-            furniture that is pleasing to the eye, reliable for the long term, but not difficult to transport overseas.
-          </p>
+    </section>
+    <!-- dekstop -->
+    <section id="items" class="section d-none d-md-flex ">
+      <div class="container-fluid">
+        <div class="product row mt-4">
+          <h5 class="items-heading flex">
+            Best Product
+            <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 14px;">
+          </h5>
+          <div class="row">
+            <div class="col-md-8">
+              <span class="">Our Best Product</span>
+            </div>
+            <div class="col-md-4 text-end d-none d-md-block">
+              <a href="#" class="button">See All Product</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="./src/assets/images/bangku.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
+              <p class="mx-3">Chairs</p>
+            </a>
+          </div>
+          <div class="col-md-3 ">
+            <a href="">
+              <img src="./src/assets/images/meja.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
+              <p class="mx-3">Table</p>
+            </a>
+          </div>
+          <div class="col-md-3 ">
+            <a href="">
+              <img src="./src/assets/images/laci.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
+              <p class="mx-3">Cabinets</p>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src=" ./src/assets/images/kursi.webp" alt class="product-card">
+              <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
+              <p class="mx-3">Chairs</p>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row d-flex justify-content-center my-5 mx-5 py-5">
-        <div class="col-md-4">
-          <h2 class="title">1k+</h2>
-          <p class="desc">products that have been made <br> and sold domestically and <br> internationally</p>
+    </section>
+
+    <!-- about section -->
+
+    <section id="about" class="section px-5">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center my-5 mx-5 py-5">
+          <h5>
+            About us <img src="./src/assets/images/Vector 1.svg" alt
+              style="width: 60px; height:auto; margin-left: 14px;">
+          </h5>
+          <div class="col-md-6">
+            <span>For</span><br>
+            <span id="minimalism">Minimalism</span><br>
+            <span>Urban Life.</span>
+          </div>
+          <div class="col-md-6">
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;We are a rattan furniture
+              brand from Cirebon 🇮🇩 who collaborates a lot
+              with local craftsmen and local designers. We believe that a
+              good design should be easy to accept and
+              comfortable to enjoy. with that we were founded to create
+              furniture that suits the needs of urban life -
+              furniture that is pleasing to the eye, reliable for the long
+              term, but not difficult to transport
+              overseas.
+            </p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h2 class="title">700+</h2>
-          <p class="desc">Trusted client and loyal <br> customers buy our product</p>
-        </div>
-        <div class="col-md-4">
-          <h2 class="title">50+</h2>
-          <p class="desc">Ships containing rattan that we <br> successfully export every month</p>
+        <div class="row d-flex justify-content-center my-5 mx-5 py-5">
+          <div class="col-md-4">
+            <h2 class="title">1k+</h2>
+            <p class="desc">products that have been made <br> and sold
+              domestically and <br> internationally</p>
+          </div>
+          <div class="col-md-4">
+            <h2 class="title">700+</h2>
+            <p class="desc">Trusted client and loyal <br> customers buy our
+              product</p>
+          </div>
+          <div class="col-md-4">
+            <h2 class="title">50+</h2>
+            <p class="desc">Ships containing rattan that we <br>
+              successfully export every month</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end about section -->
+    <!-- end about section -->
 
-  <!-- testimonial section -->
+    <!-- testimonial section -->
 
-  <!-- <section id="testimonial" class="section my-5 py-5 px-4">
+    <!-- <section id="testimonial" class="section my-5 py-5 px-4">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
@@ -181,164 +258,168 @@
     </div>
   </section> -->
 
-  <!-- end of testimonial section -->
+    <!-- end of testimonial section -->
 
-  <!-- distribution section -->
-  <section id="distribution" class="section">
-    <div class="distribution-bg d-flex flex-column justify-content-center ">
+    <!-- distribution section -->
+    <section id="distribution" class="section">
+      <div class="distribution-bg d-flex flex-column justify-content-center ">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="content px-5">
+              <div class="typogrph pt-5 px-5 pb-4">
+                <span id="white">SERATAN </span><br><span id="blue">DISTRIBUTION</span>
+              </div>
+              <p class="px-5">Not only ready-made furniture, we also
+                distribute a lot of raw rattan to big countries,
+                especially in Asia, Europe and the United States.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of distribution section -->
+
+    <!-- asal_rotan section -->
+
+    <section id="asal_rotan" class="section my-5 py-5 ps-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="content px-5">
-            <div class="typogrph pt-5 px-5 pb-4">
-              <span id="white">SERATAN </span><br><span id="blue">DISTRIBUTION</span>
+          <div class="col-md-6 d-flex justify-content-center ps-5">
+            <img src="./src/assets/images/rattan.svg" alt>
+          </div>
+          <div class="col-md-6" style="padding: 140px 0 0 80px ;">
+            <span> SOURCED FROM</span><br>
+            <span id="minimalism">QUALITY ESTATE.</span>
+            <h5 class="pt-5 pb-1">
+              We manage the land to maintain the<br>
+              quality of the rattan, along with good <br>
+              processing methods so that it is durable.</h5>
+            <a href="#" class="button">learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of asal_rotan section -->
+
+    <!-- customize section -->
+
+    <section id="customize" class="section my-5 py-5">
+      <div class="mt-5 container-fluid">
+        <div class="special-order-bg">
+          <div class="content  text-center">
+            <div class="typogrph">
+              <span id="black">SPESIAL ORDER JUST </span><span id="white">FOR YOU.</span>
             </div>
-            <p class="px-5">Not only ready-made furniture, we also distribute a lot of raw rattan to big countries,
-              especially in Asia, Europe and the United States.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end of distribution section -->
-
-  <!-- asal_rotan section -->
-
-  <section id="asal_rotan" class="section my-5 py-5 ps-5">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 d-flex justify-content-center ps-5">
-          <img src="./src/assets/images/rattan.svg" alt="">
-        </div>
-        <div class="col-md-6" style="padding: 140px 0 0 80px ;">
-          <span> SOURCED FROM</span><br>
-          <span id="minimalism">QUALITY ESTATE.</span>
-          <h5 class="pt-5 pb-1">
-            We manage the land to maintain the<br>
-            quality of the rattan, along with good <br>
-            processing methods so that it is durable.</h5>
-          <a href="#" class="button">learn more</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end of asal_rotan section -->
-
-  <!-- customize section -->
-
-  <section id="customize" class="section my-5 py-5">
-    <div class="mt-5 container-fluid">
-      <div class="special-order-bg">
-        <div class="content  text-center">
-          <div class="typogrph">
-            <span id="black">SPESIAL ORDER JUST </span><span id="white">FOR YOU.</span>
-          </div>
-          <center>
-            <p class="subtitle">As we know, everyone wants the perfect one, therefore we are open to everyone who wants
-              a
-              customization order</p>
             <center>
-              <a href="#" class="button">Customized Order</a>
+              <p class="subtitle">As we know, everyone wants the perfect
+                one, therefore we are open to everyone who
+                wants
+                a
+                customization order</p>
+              <center>
+                <a href="#" class="button">Customized Order</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end of customize section -->
+    <!-- end of customize section -->
 
-  <!-- grow section -->
+    <!-- grow section -->
 
-  <section id="grow" class="section ">
-    <div class="container-fluid my-5 py-5 px-5">
-      <div class="row">
-        <div class="col-md-6 py-5 my-5 ps-5">
-          <span>GROWING</span><br>
-          <span>WITH</span><br>
-          <span id="minimalism">INNOVATION.</span>
-          <h5 class="py-5">
-            As time goes by and we collaborate with <br>
-            local designers, we learn more about <br>
-            creating minimalist furniture design <br>
-            innovations
-          </h5>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center">
-          <img src="./src/assets/images/about1.svg" alt="">
+    <section id="grow" class="section ">
+      <div class="container-fluid my-5 py-5 px-5">
+        <div class="row">
+          <div class="col-md-6 py-5 my-5 ps-5">
+            <span>GROWING</span><br>
+            <span>WITH</span><br>
+            <span id="minimalism">INNOVATION.</span>
+            <h5 class="py-5">
+              As time goes by and we collaborate with <br>
+              local designers, we learn more about <br>
+              creating minimalist furniture design <br>
+              innovations
+            </h5>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <img src="./src/assets/images/about1.svg" alt>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end of grow section -->
+    <!-- end of grow section -->
 
+    <!-- footer section -->
 
-  <!-- footer section -->
-
-  <section id="footer" class="section ">
-    <footer class="mx-5 my-2 py-5 px-3">
-      <img src="./src/assets/images/Seratan.svg" alt="seratan-logo" width="18%">
-      <div class="row  mt-4">
-        <div class="col-md-5">
-          <p class="font-chelsea desc">
-            As time goes by and we collaborate with local designers, we learn more about creating minimalist furniture
-            design innovations
-          </p>
-        </div>
-        <div class="col-md-2">
-          <p class="font-chelsea subtitle">
-            Contact Us
-          </p>
-          <address class="font-chelsea desc">
-            <p style="margin-bottom: 0px;">
-              +62 882-1858-4552
+    <section id="footer" class="section fp-auto-height">
+      <footer class="mx-5 my-2 py-5 px-3">
+        <img src="./src/assets/images/Seratan.svg" alt="seratan-logo" width="18%">
+        <div class="row  mt-4">
+          <div class="col-md-5">
+            <p class="font-chelsea desc">
+              As time goes by and we collaborate with local designers,
+              we learn more about creating minimalist furniture
+              design innovations
             </p>
-            <p style="width: 80%;">
-              hello@seratan.com
-            </p>
-          </address>
-        </div>
-        <div class="col-md-5">
-          <div class="ms-5" style="width: 80%;">
+          </div>
+          <div class="col-md-2">
             <p class="font-chelsea subtitle">
-              Location
+              Contact Us
             </p>
             <address class="font-chelsea desc">
-              <p>
-                Jl. Raya Cirebon - Kuningan, Ds. Kanci Kulon, Kec. Kanci, Kab. Cirebon, Jawa Barat 45155
+              <p style="margin-bottom: 0px;">
+                +62 882-1858-4552
+              </p>
+              <p style="width: 80%;">
+                hello@seratan.com
               </p>
             </address>
           </div>
+          <div class="col-md-5">
+            <div class="ms-5" style="width: 80%;">
+              <p class="font-chelsea subtitle">
+                Location
+              </p>
+              <address class="font-chelsea desc">
+                <p>
+                  Jl. Raya Cirebon - Kuningan, Ds. Kanci Kulon, Kec.
+                  Kanci, Kab. Cirebon, Jawa Barat 45155
+                </p>
+              </address>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-md-5">
-          <a href="#"><img src="./src/assets/icon/insta.svg" alt="Instagram"></a>
-          <a href="#"><img src="./src/assets/icon/facebook.svg" alt="Facebook"></a>
-          <a href="#"><img src="./src/assets/icon/x.svg" alt="X-Twitter"></a>
-          <a href="#"><img src="./src/assets/icon/tiktok.svg" alt="Tiktok"></a>
-          <a href="#"><img src="./src/assets/icon/whatsapp.svg" alt="Whatsapp"></a>
-        </div>
+        <div class="row mt-3">
+          <div class="col-md-5">
+            <a href="#"><img src="./src/assets/icon/insta.svg" alt="Instagram"></a>
+            <a href="#"><img src="./src/assets/icon/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="./src/assets/icon/x.svg" alt="X-Twitter"></a>
+            <a href="#"><img src="./src/assets/icon/tiktok.svg" alt="Tiktok"></a>
+            <a href="#"><img src="./src/assets/icon/whatsapp.svg" alt="Whatsapp"></a>
+          </div>
 
-        <div class="col-md-7 d-flex justify-content-between align-items-center">
-          <a href="#section1" class="font-chelsea text-button">Home</a>
-          <a href="#section2" class="font-chelsea text-button">Product</a>
-          <a href="#section3" class="font-chelsea text-button">About Us</a>
-          <a href="#section4" class="font-chelsea text-button">Distribution</a>
-          <a href="#section5" class="font-chelsea text-button">Quality</a>
-          <a href="#section6" class="font-chelsea text-button">Order</a>
-          <a href="#section7" class="font-chelsea text-button">Grow</a>
+          <div class="col-md-7 d-flex justify-content-between align-items-center">
+            <a href="#section1" class="font-chelsea text-button">Home</a>
+            <a href="#section2" class="font-chelsea text-button">Product</a>
+            <a href="#section3" class="font-chelsea text-button">About
+              Us</a>
+            <a href="#section4" class="font-chelsea text-button">Distribution</a>
+            <a href="#section5" class="font-chelsea text-button">Quality</a>
+            <a href="#section6" class="font-chelsea text-button">Order</a>
+            <a href="#section7" class="font-chelsea text-button">Grow</a>
+          </div>
         </div>
-      </div>
-      <p class="font-chelsea copyright text-center mt-3">© 2024 Copyright TWAS Team. All rights reserved.</p>
-    </footer>
-  </section>
+        <p class="font-chelsea copyright text-center mt-3">© 2024
+          Copyright TWAS Team. All rights reserved.</p>
+      </footer>
+    </section>
   </div>
 
-
-
   <!-- 👇 javascript code file 👇 -->
-  <script type="text/javascript" src="./node_modules/fullpage.js/dist/fullpage.js"></script>
   <script src="./node_modules/fullpage.js/vendors/easings.js"></script>
+  <script type="text/javascript" src="./node_modules/fullpage.js/dist/fullpage.js"></script>
   <script src="./src/js/index.js"></script>
   <script>
   </script>

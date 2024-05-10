@@ -1,7 +1,9 @@
 /*? global clearing */
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chelsea+Market&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *,
 html,
 body {
@@ -77,7 +79,7 @@ nav #nav-title {
   border-radius: 30px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  margin: 0 20px;
+  margin: 0 .75rem;
 }
 
 .hero .items {
@@ -86,7 +88,7 @@ nav #nav-title {
 }
 
 #hero-item {
-  margin-top: 25vh;
+  margin-top: 10vh;
 }
 
 /* End Hero Section */
