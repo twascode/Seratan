@@ -116,7 +116,11 @@ nav #nav-title {
   line-height: 90%; /* 72px */
   text-transform: capitalize;
 }
-
+#items .fp-slidesNav {
+  display: flex;
+  justify-content: center;
+  
+}
 .product a {
   color: #000;
   text-decoration: 0;
