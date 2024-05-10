@@ -28,6 +28,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <title>Seratan - Rattan Furniture From Cirebon</title>
     <!-- css code file -->
 
@@ -66,126 +68,130 @@
     </section>
 
     <!-- card item section -->
-    <!-- mobile -->
-    <section id="items" class="section d-md-none d-block">
-      <div class="container-fluid">
-
-
-        <div class="product ">
-          <div class=" slide" data="slide1">
-            <h5 class="items-heading flex">
-              Best Product
-              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
-            </h5>
-            <div class="">
-              <div class="">
-                <span class="heading">Our Best Chair</span>
-              </div>
-            </div>
-            <a href="">
-              <img src="./src/assets/images/bangku.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
-              <p class="mx-3">Chairs</p>
-            </a>
-          </div>
-          <div class=" slide " data="slide2">
-            <h5 class="items-heading flex">
-              Best Product
-              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
-            </h5>
-            <div class="">
-              <div class="">
-                <span class="">Our Best Table</span>
-              </div>
-            </div>
-            <a href="">
-              <img src="./src/assets/images/meja.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
-              <p class="mx-3">Table</p>
-            </a>
-          </div>
-          <div class=" slide " data="slide3">
-            <h5 class="items-heading flex">
-              Best Product
-              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
-            </h5>
-            <div class="">
-              <div class="">
-                <span class="">Our Best Cabinet</span>
-              </div>
-            </div>
-            <a href="">
-              <img src="./src/assets/images/laci.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
-              <p class="mx-3">Cabinets</p>
-            </a>
-          </div>
-          <div class=" slide" data="slide4">
-            <h5 class="items-heading flex">
-              Best Product
-              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
-            </h5>
-            <div class="">
-              <div class="">
-                <span class="">Our Best Chair</span>
-              </div>
-            </div>
-            <a href="">
-              <img src=" ./src/assets/images/kursi.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
-              <p class="mx-3">Chairs</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- dekstop -->
-    <section id="items" class="section d-none d-md-flex ">
-      <div class="container-fluid">
-        <div class="product row mt-4">
-          <h5 class="items-heading flex">
-            Best Product
-            <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 14px;">
-          </h5>
-          <div class="row">
-            <div class="col-md-8">
-              <span class="">Our Best Product</span>
+    <section id="items" class="section">
+      <div id="no-slides" class="d-none d-md-flex justify-content-center">
+        <div class="container-fluid">
+          <div class="product row mt-4">
+            <h5 class="items-heading flex">
+              Best Product
+              <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 14px;">
+            </h5>
+            <div class="row">
+              <div class="col-md-8">
+                <span class="">Our Best Product</span>
+              </div>
+              <div class="col-md-4 text-end d-none d-md-block">
+                <a href="#" class="button">See All Product</a>
+              </div>
             </div>
-            <div class="col-md-4 text-end d-none d-md-block">
-              <a href="#" class="button">See All Product</a>
+            <div class="col-md-3">
+              <a href="">
+                <img src="./src/assets/images/bangku.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
+                <p class="mx-3">Chairs</p>
+              </a>
+            </div>
+            <div class="col-md-3 ">
+              <a href="">
+                <img src="./src/assets/images/meja.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
+                <p class="mx-3">Table</p>
+              </a>
+            </div>
+            <div class="col-md-3 ">
+              <a href="">
+                <img src="./src/assets/images/laci.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
+                <p class="mx-3">Cabinets</p>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img src=" ./src/assets/images/kursi.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
+                <p class="mx-3">Chairs</p>
+              </a>
             </div>
           </div>
-          <div class="col-md-3">
-            <a href="">
-              <img src="./src/assets/images/bangku.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
-              <p class="mx-3">Chairs</p>
-            </a>
-          </div>
-          <div class="col-md-3 ">
-            <a href="">
-              <img src="./src/assets/images/meja.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
-              <p class="mx-3">Table</p>
-            </a>
-          </div>
-          <div class="col-md-3 ">
-            <a href="">
-              <img src="./src/assets/images/laci.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
-              <p class="mx-3">Cabinets</p>
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="">
-              <img src=" ./src/assets/images/kursi.webp" alt class="product-card">
-              <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
-              <p class="mx-3">Chairs</p>
-            </a>
+        </div>
+      </div>
+      <div class="d-block d-md-none">
+        <div class="container-fluid">
+          <div class="product ">
+            <div id="slides" class="" data="slide1">
+              <h5 class="items-heading flex">
+                Best Product
+                <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+              </h5>
+              <div class="">
+                <div class="">
+                  <span class="heading">Our Best Chair</span>
+                </div>
+              </div>
+              <a href="">
+                <img src="./src/assets/images/bangku.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Midang Chair</h5>
+                <p class="mx-3">Chairs</p>
+              </a>
+            </div>
+            <div id="slides1" class=" " data="slide2">
+              <h5 class="items-heading flex">
+                Best Product
+                <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+              </h5>
+              <div class="">
+                <div class="">
+                  <span class="">Our Best Table</span>
+                </div>
+              </div>
+              <a href="">
+                <img src="./src/assets/images/meja.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Menggawe Table</h5>
+                <p class="mx-3">Table</p>
+              </a>
+            </div>
+            <div id="slides2" class=" " data="slide3">
+              <h5 class="items-heading flex">
+                Best Product
+                <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+              </h5>
+              <div class="">
+                <div class="">
+                  <span class="">Our Best Cabinet</span>
+                </div>
+              </div>
+              <a href="">
+                <img src="./src/assets/images/laci.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Nice Bupet</h5>
+                <p class="mx-3">Cabinets</p>
+              </a>
+            </div>
+            <div id="slides3" class="" data="slide4">
+              <h5 class="items-heading flex">
+                Best Product
+                <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 10px;">
+              </h5>
+              <div class="">
+                <div class="">
+                  <span class="">Our Best Chair</span>
+                </div>
+              </div>
+              <a href="">
+                <img src=" ./src/assets/images/kursi.webp" alt class="product-card">
+                <h5 class="product-title pt-3 mx-3">Relax Bale</h5>
+                <p class="mx-3">Chairs</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- mobile -->
+    <!-- <section id="items" class="d-md-none section d-block">
+
+    </section> -->
+
 
     <!-- about section -->
 
