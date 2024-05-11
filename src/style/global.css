@@ -258,7 +258,8 @@ nav a {
   font-size: clamp(1rem, 1.5dvw, 100rem);
   text-align: start;
 }
-#more {
+
+/* #more {
   color: #2e2e2e;
   font-family: "Chelsea Market";
   font-size: 20px;
@@ -274,55 +275,40 @@ nav a {
   background-color: #000;
   color: #fff;
   transition: 0.5s;
-}
+} */
 
 /* end of asal_rotan section */
 
 /* customize section */
-
-#customize .typogrph {
+#customize .heading {
   color: #2e2e2e;
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #2e2e2e;
-  font-family: "Bebas Neue";
-  font-size: 5.3vw;
-  font-style: normal;
-  font-weight: 400;
-  text-transform: capitalize;
+  font-size: clamp(4.5rem, 5.5dvw, 100rem);
+  text-align: center;
 }
-
-#customize .typogrph #white {
-  color: #f4f4f4;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2e2e2e;
+#customize p {
+  color: #b1b1b1;
+  width: clamp(40rem, 50dvw, 100rem);
+  font-size: clamp(1rem, 1.5dvw, 100rem);
+  text-align: justify;
 }
-
 #customize .special-order-bg {
-  background-image: url(../assets/images/special-order.webp);
-  height: 120vh;
+  background-image: url(../assets/images/spesial-order.webp);
+  /* background-size: cover; */
+  height: 95dvh;
+  max-width: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 97%;
+  background-position-x: center;
+  /* background-position: top center 90%; */
+  background-size: cover;
   border-radius: 30px;
 }
 
-.special-order-bg .subtitle {
-  margin-top: -25px;
-  width: 48%;
-  color: #b1b1b1;
-  font-family: "Chelsea Market";
-  font-size: 1.5vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.66px;
-  margin-bottom: 25px;
-  text-align: justify;
+#customize .button {
+  width: clamp(25rem, 50dvw, 100rem);
+  font-size: clamp(1rem, 1.5dvw, 100rem);
 }
 
-#customize .button {
-  padding: 10px 18.5vw;
-}
+
 
 /* end of customize  section */
 
@@ -485,8 +471,72 @@ nav a {
     font-size: clamp(6rem, 0.5dvw, 100rem);
     text-align: center;
   }
+  #customize .content{
+    padding-top: 0.5rem!important;
+  }
+  #customize .heading {
+    color: #2e2e2e;
+    font-size: clamp(5.1rem, 5.5dvw, 100rem);
+    text-align: center;
+  }
+  #customize p {
+    color: #b1b1b1;
+    width: 46rem;
+    /* width: clamp(40rem, 50dvw, 100rem); */
+    font-size: 1.35rem;
+    text-align: justify;
+  }
+  #customize .button {
+    width: 46rem;
+    font-size: 1.35rem;
+  }
 }
-
+@media screen and (max-width: 1024px) {
+  #customize .special-order-bg {
+    background: url(../assets/images/special-order1.webp)rgba(0, 0, 0, 0.20);
+    /* background-size: cover; */
+    height: 95dvh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    border-radius: 30px;
+    background-blend-mode: multiply;
+  }
+  #customize .heading {
+    color: #f4f4f4!important;
+    width: clamp(5rem, 60dvw, 100rem);
+    font-size: clamp(4.5rem, 10dvw, 100rem);
+    text-align: center;
+  }
+  #customize .heading span {
+    color: transparent;
+    stroke: 1px solid #f4f4f4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f4f4f4;
+    text-align: center;
+  }
+  #customize p {
+    color: #f4f4f4!important;
+    /* width: 46rem; */
+    width: clamp(5rem, 50dvw, 100rem);
+    font-size: clamp(1.5rem, 2dvw, 100rem);
+    text-align: center;
+  }
+  #customize .button {
+    color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    width: auto;
+    font-size: clamp(1rem, 2.5dvw, 100rem);
+  }
+  #customize .button:hover {
+    background-color: #f4f4f4;
+    color: #2e2e2e;
+    border: 1px solid #f4f4f4;
+    width: auto;
+    font-size: clamp(1rem, 2.5dvw, 100rem);
+  }
+}
 @media screen and (max-width: 768px) {
   
   nav.responsive {
