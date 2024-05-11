@@ -316,44 +316,24 @@ nav a {
 #grow {
   margin-top: 40px;
 }
-#grow span {
-  color: #2e2e2e;
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #2e2e2e;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 72px */
-  text-transform: capitalize;
-}
 
-#grow #minimalism {
-  color: #f4f4f4;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  text-transform: capitalize;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2e2e2e;
-}
-#grow h5 {
-  color: #b1b1b1;
-  font-family: "Chelsea Market";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.72px;
+#grow .heading {
+  color: #2e2e2e;
+  width: clamp(25rem, 0.5dvw, 100rem);;
+  font-size: clamp(4.5rem, 0.5dvw, 100rem);
   text-align: start;
 }
-#grow img {
+#grow P {
+  color: #b1b1b1;
+  width: clamp(25rem, 30dvw, 100rem);
+  font-size: clamp(1rem, 1.5dvw, 100rem);
+  text-align: start;
+}
+/* #grow img {
   width: 640px;
   height: 640px;
   flex-shrink: 0;
-}
+} */
 /* end of grow section */
 
 /* Footer section */
@@ -448,6 +428,18 @@ nav a {
     text-align: center;
   }
   #asal_rotan p {
+    color: #b1b1b1;
+    font-size: clamp(1.2rem, 2dvw, 100rem);
+    text-align: center;
+    width: 100%;
+  }
+  #grow .heading {
+    color: #2e2e2e;
+    width: 100%;
+    font-size: clamp(4.5rem, 0.5dvw, 100rem);
+    text-align: center;
+  }
+  #grow p {
     color: #b1b1b1;
     font-size: clamp(1.2rem, 2dvw, 100rem);
     text-align: center;
