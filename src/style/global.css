@@ -22,18 +22,30 @@ body {
 }
 
 html, 
-body, 
-section, 
+body,  
 .heading {
   font-family: "Bebas Neue";
+  /* font-size: 80px; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+}
+html, 
+body,  
+p {
+  font-family: "Chelsea Market";
+  font-size: clamp(1rem, 0.9dvw, 100rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.4rem;
 }
 
-html, 
-body, 
-section, 
-.heading span {
+/* html, 
+body, */
+.heading span  {
   color: transparent;
-  stroke: 1px #2e2e2e;
+  stroke: 1px solid #2e2e2e;
   font-family: "Bebas Neue";
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #2e2e2e;
@@ -98,9 +110,10 @@ nav a {
 
 /* Items Section */
 
+#items .fp-overflow {
+  overflow-y: visible;
+}
 #items .items-heading {
-  color: #b1b1b1;
-  font-family: "Chelsea Market";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -108,15 +121,9 @@ nav a {
   letter-spacing: -0.72px;
 }
 
-#items span {
+#items .heading {
   color: #2e2e2e;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2e2e2e;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 72px */
+  font-size: clamp(5rem, 0.5dvw, 100rem);
   text-transform: capitalize;
 }
 
@@ -126,26 +133,28 @@ nav a {
   justify-content: center;
   
 }
-.product a {
+.product .prod a {
+  color: #000;
+  text-decoration: 0;
+}
+.product .prod {
+  transition: transform .5s;
   color: #000;
   text-decoration: 0;
 }
 
-.product a:hover {
-  color: #000;
-  text-decoration: underline;
-  transition: 0.5s;
+.product .prod:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
 }
 
-.product-title {
+
+#items .product-title {
   color: #2e2e2e;
-  font-family: "Bebas Neue";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
+  margin-bottom: -0.5rem;
+  font-size: clamp(2rem, 0.5dvw, 100rem);
   line-height: normal;
-  text-transform: capitalize;
-  margin-bottom: -2px !important;
 }
 
 .product-card {
@@ -155,11 +164,6 @@ nav a {
 
 #items p {
   color: #b1b1b1;
-  font-family: "Chelsea Market";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.72px;
 }
 
@@ -167,34 +171,19 @@ nav a {
 
 /* About Section */
 
-#about h5 {
-  color: #b1b1b1;
-  font-family: "Chelsea Market";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.72px;
-}
 #about p {
-  color: #2e2e2e;
-  font-family: "Chelsea Market";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  color: #b1b1b1;
   letter-spacing: -0.72px;
 }
-#about span {
+#about .heading {
   color: #2e2e2e;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2e2e2e;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 72px */
+  font-size: clamp(4.5rem, 0.5dvw, 100rem);
   text-transform: capitalize;
+}
+#about .desc {
+  color: #b1b1b1;
+  font-size: clamp(1.4rem, 0.5dvw, 100rem);
+  letter-spacing: -0.6px;
 }
 #about img {
   width: 640px;
@@ -202,36 +191,14 @@ nav a {
   flex-shrink: 0;
   border-radius: 30px;
 }
-
-#about #minimalism {
-  color: #f4f4f4;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  text-transform: capitalize;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2e2e2e;
-}
-
 #about .title {
   color: #000;
-  font-family: "Chelsea Market";
-  font-size: 128px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-size: clamp(8rem, 0.5dvw, 100rem);
   text-align: center;
 }
-#about .desc {
+#about .title-desc{
   color: #b1b1b1;
   text-align: center;
-  font-family: "Chelsea Market";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 /* End About Section */
@@ -523,8 +490,26 @@ nav a {
     display: block;
   }
 }
+@media screen and (max-width: 1440px) {
+  #about .heading {
+    color: #2e2e2e;
+    font-size: clamp(4rem, 0.5dvw, 100rem);
+    text-transform: capitalize;
+  }
+  #about .desc {
+    color: #b1b1b1;
+    font-size: clamp(1.2rem, 0.5dvw, 100rem);
+    letter-spacing: -0.72px;
+  }
+  #about .title {
+    color: #000;
+    font-size: clamp(6rem, 0.5dvw, 100rem);
+    text-align: center;
+  }
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  
   nav.responsive {
     position: relative;
   }
@@ -538,9 +523,41 @@ nav a {
     display: block;
     text-align: left;
   }
+  /* items */
   #items .fp-slidesNav {
     display: flex;
     justify-content: center;
+  }
+  #items .heading {
+    color: #2e2e2e;
+    font-size: clamp(3.5rem, 0.9dvw, 100rem);
+    text-transform: capitalize;
+  }
+  #items .product-title {
+    color: #2e2e2e;
+    margin-bottom: -0.5rem;
+    font-size: clamp(2.5rem, 0.5dvw, 100rem);
+    line-height: normal;
+  }
+  .product  a {
+    color: #000;
+    text-decoration: 0;
+  }
+  /* about */
+  #about .heading {
+    color: #2e2e2e;
+    font-size: clamp(3.8em, 0dvw, 100rem);
+    text-transform: capitalize;
+  }
+  #about .desc {
+    color: #b1b1b1;
+    font-size: clamp(0.8rem, 0.5dvw, 100rem);
+    letter-spacing: -0.72px;
+  }
+  #about .title {
+    color: #000;
+    font-size: clamp(4rem, 0.5dvw, 100rem);
+    text-align: center;
   }
 }
 

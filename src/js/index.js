@@ -144,6 +144,7 @@ function delSlideNav(x) {
 }
 // Create a MediaQueryList object
 var x = window.matchMedia("(max-width: 768px)")
+delSlideNav(x);
 
 // Call listener function at run time
 $(window).resize(async function () {
