@@ -5,6 +5,7 @@ take a look at click listener on the button, you will see "babypack".
 change it to "starterpack". 
 done!
 */
+window.scrollTo(0,1);
 document.addEventListener("DOMContentLoaded", function (event) {
   var cursor = document.querySelector(".custom-cursor");
   var links = document.querySelectorAll("a");
@@ -111,18 +112,18 @@ async function showPopup(params) {
 //     $("#slides").addClass("slide");
 //   }
 // });
-function removeClass() {
-  // $(".slide").removeClass("slide");
-  $(".fp-slidesNav").removeAttr();
-}
-removeClass();
+// function removeClass() {
+//   // $(".slide").removeClass("slide");
+//   $(".fp-slidesNav").removeAttr();
+// }
+// removeClass();
 function delSlideNav(x) {
   if (x.matches) { // If media query matches
     // $(".fp-slides").addClass();
-    $("#slides").addClass("slide fp-table fp-is-overflow");
-    $("#slides1").addClass("slide slide fp-table fp-is-overflow");
-    $("#slides2").addClass("slide slide fp-table fp-is-overflow");
-    $("#slides3").addClass("slide slide fp-table fp-is-overflow");
+    $("#slides").addClass("slide fp-table ");
+    $("#slides1").addClass("slide slide fp-table ");
+    $("#slides2").addClass("slide slide fp-table ");
+    $("#slides3").addClass("slide slide fp-table ");
   } else {
     // $("#slides").addClass("slide");
     $(".fp-slidesNav").removeAttr();
@@ -169,11 +170,10 @@ new fullpage('#fullpage', {
   anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8'],
   menu: '#myMenu',
   controlArrows: false,
-  showActiveTooltip: false,
+  // showActiveTooltip: true,
   slidesNavigation: true,
   slidesNavPosition: 'bottom',
   loopHorizontal: false,
-  lockAnchors: true,
   // continuousHorizontal: true,
   // navigationTooltips: ['Home','About Us', 'tes'],
   showActiveTooltip: true,

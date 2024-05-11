@@ -218,46 +218,30 @@ nav a {
     url(../assets/images/719.webp);
     height: 70dvh;
     border-radius: 30px;
-    margin: 0 20px;
+    margin: 0 .75rem;
     /* flex-shrink: 0; */
     background-repeat: no-repeat;
     background-position: center 90%;
     background-size: cover;
 }
 
-#distribution .typogrph #white {
+#distribution .heading {
   color: #f4f4f4;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #f4f4f4;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 72px */
+  font-size: clamp(4.5rem, 0.5dvw, 100rem);
   text-transform: capitalize;
 }
 
-#distribution .typogrph #blue {
-  color: #0f74ad;
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  text-transform: capitalize;
+#distribution .heading span {
+  stroke: 1px solid #f4f4f4;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #f4f4f4;
 }
 
 #distribution p {
   color: #fff;
+  font-size: clamp(1rem, 1.5dvw, 100rem);
   text-align: justify;
-  font-family: "Chelsea Market";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 27%;
+  width: clamp(20rem, 35dvw, 100rem);;
 }
 /* end distribution section */
 
@@ -498,7 +482,7 @@ nav a {
   }
   #about .desc {
     color: #b1b1b1;
-    font-size: clamp(1.2rem, 0.5dvw, 100rem);
+    font-size: clamp(1rem, 0.5dvw, 100rem);
     letter-spacing: -0.72px;
   }
   #about .title {
@@ -550,7 +534,7 @@ nav a {
     text-transform: capitalize;
   }
   #about .desc {
-    color: #b1b1b1;
+    color: rgb(177, 177, 177);
     font-size: clamp(0.8rem, 0.5dvw, 100rem);
     letter-spacing: -0.72px;
   }
@@ -558,6 +542,41 @@ nav a {
     color: #000;
     font-size: clamp(4rem, 0.5dvw, 100rem);
     text-align: center;
+  }
+
+  #distribution .img-distri {
+    background-image: linear-gradient(
+      0deg,
+      #f4f4f4 2%,
+      rgba(255, 255, 255, 0) 40.85%
+    ),
+    url(../assets/images/719.webp);
+    height: 25dvh;
+    border-radius: 20px 20px 0 0;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+    background-size: cover;
+  }
+  
+  #distribution .heading {
+    text-align: center;
+    color: #2e2e2e;
+    font-size: clamp(4.5rem, 0.5dvw, 100rem);
+    text-transform: capitalize;
+  }
+  
+  #distribution .heading span {
+    stroke: 1px solid #2e2e2e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2e2e2e;
+  }
+  
+  #distribution p {
+    padding: 0 4rem;
+    color: #2e2e2e;
+    font-size: clamp(1.2rem, 3dvw, 100rem);
+    text-align: center;
+    width: 100%;
   }
 }
 
