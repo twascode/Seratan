@@ -6,7 +6,8 @@
   <head>
     <!-- meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1" />
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, minimum-scale=1" /> -->
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -52,23 +53,26 @@
     </nav>
   </header> -->
 
-  <!-- hero section -->
-
   <div id="fullpage">
     <section id="hero" class="section">
-      <div class="hero">
-        <div class="container-fluid items">
-          <div class="row">
-            <div class="col-7 d-flex justify-content-center">
-              <img src="src/assets/images/Frame 32.png" alt width="70%" id="hero-item">
+      <div class="container-fluid ">
+        <div class="d-block d-lg-none">
+          <div class="row items">
+            <div class="col-lg-7 d-flex justify-content-center">
+              <img src="src/assets/images/Frame 32.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="hero"></div>
+        </div>
+        <div class="hero d-none d-lg-block">
+          <div class="row d-lg-block items">
+            <div class="col-lg-7 d-flex justify-content-center">
+              <img src="src/assets/images/Frame 32.png" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- card item section -->
-    <!-- dekstop -->
     <section id="items" class="section">
       <div id="no-slides" class="d-none d-md-flex justify-content-center">
         <div class="container-fluid">
@@ -188,12 +192,9 @@
       </div>
     </section>
 
-
-    <!-- about section -->
-
     <section id="about" class="section px-md-5 px-2">
       <div class="container-fluid">
-        <div class="row d-flex justify-content-center my-md-5 mx-md-5 py-md-5">
+        <div class="row d-flex justify-content-center my-lg-5 mx-lg-5 py-lg-5">
           <p>
             About us <img src="./src/assets/images/Vector 1.svg" alt
               style="width: 60px; height:auto; margin-left: 14px;">
@@ -241,7 +242,6 @@
       </div>
     </section>
 
-    <!-- distribution section -->
     <section id="distribution" class="section">
       <div class="d-flex d-md-none flex-column justify-content-center ">
         <div class="container-fluid">
@@ -273,9 +273,6 @@
         </div>
       </div>
     </section>
-    <!-- end of distribution section -->
-
-    <!-- asal_rotan section -->
 
     <section id="asal_rotan" class="section my-lg-5 py-lg-5 ps-lg-5">
       <div class="container-fluid">
@@ -287,7 +284,7 @@
             <h5 class="heading"> SOURCED FROM
               <span>QUALITY ESTATE.</span>
             </h5>
-            <p class="">
+            <p class="px-md-5 px-lg-0">
               We manage the land to maintain the
               quality of the rattan, along with good
               processing methods so that it is durable.</p>
@@ -295,10 +292,6 @@
         </div>
       </div>
     </section>
-
-    <!-- end of asal_rotan section -->
-
-    <!-- customize section -->
 
     <section id="customize" class="section">
       <div class="container-fluid">
@@ -318,10 +311,6 @@
       </div>
     </section>
 
-    <!-- end of customize section -->
-
-    <!-- grow section -->
-
     <section id="grow" class="section my-lg-5 py-lg-5 px-lg-5">
       <div class="container-fluid ">
         <div class="row justify-content-center">
@@ -329,7 +318,7 @@
             <h5 class="heading"> GROWING WITH
               <span>INNOVATION.</span>
             </h5>
-            <p class="">
+            <p class="px-lg-0 px-md-5">
               As time goes by and we collaborate with
               local designers, we learn more about
               creating minimalist furniture design
@@ -342,75 +331,93 @@
       </div>
     </section>
 
-    <!-- end of grow section -->
-
-    <!-- footer section -->
-
     <section id="footer" class="section fp-auto-height">
-      <footer class="mx-5 my-2 py-5 px-3">
-        <img src="./src/assets/images/Seratan.svg" alt="seratan-logo" width="18%">
-        <div class="row  mt-4">
-          <div class="col-md-5">
-            <p class="font-chelsea desc">
-              As time goes by and we collaborate with local designers,
-              we learn more about creating minimalist furniture
-              design innovations
-            </p>
-          </div>
-          <div class="col-md-2">
-            <p class="font-chelsea subtitle">
-              Contact Us
-            </p>
-            <address class="font-chelsea desc">
-              <p style="margin-bottom: 0px;">
-                +62 882-1858-4552
+      <footer class="container-fluid px-md-5 my-md-2 py-md-5">
+        <div class="px-md-5">
+
+          <div class="row  mt-md-4 align-items-lg-center">
+            <div class="col-12 col-lg-5">
+              <img src="./src/assets/images/Seratan.svg" class="img-fluid mb-3" width="45%" alt="seratan-logo">
+              <p class="desc">
+                As time goes by and we collaborate with local designers,
+                we learn more about creating minimalist furniture
+                design innovations
               </p>
-              <p style="width: 80%;">
+            </div>
+            <div class="col-12 col-lg-2">
+              <p class="title mb-3">
+                Contact Us
+              </p>
+              <p class="desc">
+                +62 882-1858-4552
                 hello@seratan.com
               </p>
-            </address>
-          </div>
-          <div class="col-md-5">
-            <div class="ms-5" style="width: 80%;">
-              <p class="font-chelsea subtitle">
-                Location
-              </p>
-              <address class="font-chelsea desc">
-                <p>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="ms-lg-5">
+                <p class="title mb-3">
+                  Location
+                </p>
+                <p class="desc">
                   Jl. Raya Cirebon - Kuningan, Ds. Kanci Kulon, Kec.
                   Kanci, Kab. Cirebon, Jawa Barat 45155
                 </p>
-              </address>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-md-5">
-            <a href="#"><img src="./src/assets/icon/insta.svg" alt="Instagram"></a>
-            <a href="#"><img src="./src/assets/icon/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="./src/assets/icon/x.svg" alt="X-Twitter"></a>
-            <a href="#"><img src="./src/assets/icon/tiktok.svg" alt="Tiktok"></a>
-            <a href="#"><img src="./src/assets/icon/whatsapp.svg" alt="Whatsapp"></a>
+        <div class="row px-md-5 mt-3 align-items-center">
+          <div class="col-12 col-lg-5 mb-4 mb-md-4 mb-lg-0">
+            <a class="btn p-3" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="27"
+                viewBox="0 0 26 27" fill="none">
+                <path
+                  d="M19 0.5H7C5.14409 0.501985 3.36477 1.24012 2.05245 2.55245C0.740121 3.86477 0.00198528 5.64409 0 7.5V19.5C0.00198528 21.3559 0.740121 23.1352 2.05245 24.4476C3.36477 25.7599 5.14409 26.498 7 26.5H19C20.8559 26.498 22.6352 25.7599 23.9476 24.4476C25.2599 23.1352 25.998 21.3559 26 19.5V7.5C25.998 5.64409 25.2599 3.86477 23.9476 2.55245C22.6352 1.24012 20.8559 0.501985 19 0.5ZM13 19.5C11.8133 19.5 10.6533 19.1481 9.66658 18.4888C8.67988 17.8295 7.91085 16.8925 7.45672 15.7961C7.0026 14.6997 6.88378 13.4933 7.11529 12.3295C7.3468 11.1656 7.91824 10.0965 8.75736 9.25736C9.59647 8.41824 10.6656 7.8468 11.8295 7.61529C12.9933 7.38378 14.1997 7.5026 15.2961 7.95672C16.3925 8.41085 17.3295 9.17988 17.9888 10.1666C18.6481 11.1533 19 12.3133 19 13.5C18.9983 15.0908 18.3657 16.616 17.2408 17.7408C16.116 18.8657 14.5908 19.4983 13 19.5ZM20.5 7.5C20.2033 7.5 19.9133 7.41203 19.6666 7.2472C19.42 7.08238 19.2277 6.84811 19.1142 6.57403C19.0007 6.29994 18.9709 5.99834 19.0288 5.70736C19.0867 5.41639 19.2296 5.14912 19.4393 4.93934C19.6491 4.72956 19.9164 4.5867 20.2074 4.52882C20.4983 4.47094 20.7999 4.50065 21.074 4.61418C21.3481 4.72771 21.5824 4.91997 21.7472 5.16664C21.912 5.41332 22 5.70333 22 6C22 6.39782 21.842 6.77936 21.5607 7.06066C21.2794 7.34196 20.8978 7.5 20.5 7.5ZM17 13.5C17 14.2911 16.7654 15.0645 16.3259 15.7223C15.8864 16.3801 15.2616 16.8928 14.5307 17.1955C13.7998 17.4983 12.9956 17.5775 12.2196 17.4231C11.4437 17.2688 10.731 16.8878 10.1716 16.3284C9.61216 15.769 9.2312 15.0563 9.07686 14.2804C8.92252 13.5044 9.00173 12.7002 9.30448 11.9693C9.60723 11.2384 10.1199 10.6136 10.7777 10.1741C11.4355 9.7346 12.2089 9.5 13 9.5C14.0609 9.5 15.0783 9.92143 15.8284 10.6716C16.5786 11.4217 17 12.4391 17 13.5Z"
+                  fill="white" />
+              </svg></a>
+            <a class="btn p-3" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="27"
+                viewBox="0 0 26 27" fill="none">
+                <path
+                  d="M26 13.5429C25.9959 16.731 24.8302 19.8076 22.7224 22.1931C20.6145 24.5786 17.7101 26.1085 14.5562 26.4944C14.486 26.5024 14.4149 26.4954 14.3476 26.4738C14.2803 26.4521 14.2183 26.4165 14.1657 26.369C14.1131 26.3216 14.0712 26.2636 14.0426 26.1987C14.0141 26.1339 13.9995 26.0637 14 25.9927V16.5531H17C17.1371 16.5534 17.2728 16.5254 17.3986 16.4709C17.5245 16.4164 17.6378 16.3365 17.7316 16.2361C17.8254 16.1358 17.8976 16.0172 17.9438 15.8877C17.9899 15.7581 18.0091 15.6205 18 15.4832C17.9779 15.2252 17.8593 14.9851 17.6679 14.8113C17.4766 14.6375 17.2268 14.5428 16.9687 14.5463H14V11.5361C14 11.0038 14.2107 10.4934 14.5858 10.117C14.9608 9.74066 15.4695 9.52922 16 9.52922H18C18.1371 9.52953 18.2728 9.50154 18.3986 9.44701C18.5245 9.39248 18.6378 9.31256 18.7316 9.21223C18.8254 9.1119 18.8976 8.99329 18.9438 8.86377C18.9899 8.73425 19.0091 8.59659 19 8.45933C18.9779 8.20087 18.8589 7.96044 18.667 7.78656C18.4752 7.61267 18.2247 7.51827 17.9662 7.5224H16C14.9391 7.5224 13.9217 7.94526 13.1715 8.69797C12.4214 9.45068 12 10.4716 12 11.5361V14.5463H8.99996C8.86287 14.546 8.72719 14.574 8.60133 14.6285C8.47548 14.683 8.36214 14.763 8.26836 14.8633C8.17458 14.9636 8.10236 15.0822 8.05619 15.2117C8.01002 15.3413 7.99088 15.4789 7.99996 15.6162C8.02208 15.8746 8.14107 16.1151 8.33292 16.289C8.52477 16.4628 8.77521 16.5572 9.03371 16.5531H12V25.9952C12.0004 26.066 11.9859 26.1361 11.9574 26.2009C11.9289 26.2657 11.8871 26.3237 11.8346 26.371C11.7822 26.4184 11.7204 26.4541 11.6532 26.4758C11.5861 26.4975 11.5151 26.5047 11.445 26.497C8.20665 26.1012 5.23441 24.5 3.11654 22.0103C0.998676 19.5205 -0.110452 16.3236 0.00869324 13.0525C0.258694 6.27942 5.7262 0.773183 12.4812 0.509787C14.2301 0.441813 15.9746 0.72847 17.6106 1.35261C19.2465 1.97675 20.7401 2.92555 22.0022 4.14227C23.2642 5.35898 24.2688 6.8186 24.9557 8.43384C25.6426 10.0491 25.9978 11.7867 26 13.5429Z"
+                  fill="white" />
+              </svg></a>
+            <a class="btn p-3" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="25"
+                viewBox="0 0 22 25" fill="none">
+                <path
+                  d="M21.876 23.9815C21.7899 24.1384 21.6633 24.2693 21.5094 24.3605C21.3555 24.4517 21.1799 24.5 21.001 24.5003H15.0008C14.8325 24.5003 14.667 24.4577 14.5195 24.3767C14.372 24.2956 14.2473 24.1786 14.1571 24.0365L9.0957 16.0826L1.74053 24.1728C1.56123 24.3654 1.31323 24.4796 1.05032 24.4906C0.787402 24.5015 0.530751 24.4085 0.336009 24.2315C0.141267 24.0545 0.0241305 23.8079 0.00999425 23.5451C-0.00414203 23.2824 0.0858619 23.0246 0.260493 22.8278L7.98192 14.3276L0.15674 2.03729C0.0603647 1.88609 0.00641419 1.71176 0.0005374 1.53256C-0.00533939 1.35335 0.0370737 1.17586 0.123336 1.01867C0.209598 0.861481 0.336536 0.730377 0.490857 0.639084C0.645178 0.547791 0.821207 0.499669 1.00051 0.499756H7.00065C7.16895 0.499808 7.33452 0.542338 7.48202 0.623406C7.62951 0.704474 7.75416 0.821456 7.84442 0.963517L12.9058 8.91745L20.261 0.827263C20.4403 0.634657 20.6882 0.520486 20.9512 0.509501C21.2141 0.498516 21.4707 0.591604 21.6655 0.768582C21.8602 0.94556 21.9773 1.19216 21.9915 1.45493C22.0056 1.7177 21.9156 1.97544 21.741 2.17229L14.0196 10.6662L21.8447 22.964C21.9406 23.1153 21.994 23.2895 21.9995 23.4685C22.005 23.6475 21.9624 23.8247 21.876 23.9815Z"
+                  fill="white" />
+              </svg></a>
+            <a class="btn p-3" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="27"
+                viewBox="0 0 26 27" fill="none">
+                <path
+                  d="M26 8V13C26 13.2652 25.8946 13.5196 25.7071 13.7071C25.5196 13.8946 25.2652 14 25 14C22.911 14.0049 20.8521 13.5026 19 12.5363V17.5C19 20.0196 17.9991 22.4359 16.2175 24.2175C14.4359 25.9991 12.0196 27 9.5 27C6.98044 27 4.56408 25.9991 2.78249 24.2175C1.00089 22.4359 0 20.0196 0 17.5C0 12.8875 3.36375 8.81 7.825 8.015C7.96892 7.98942 8.1167 7.9957 8.25793 8.0334C8.39916 8.07111 8.53041 8.13931 8.64243 8.23322C8.75445 8.32713 8.84452 8.44445 8.9063 8.57693C8.96808 8.70941 9.00006 8.85382 9 9V14.3363C9.00006 14.5255 8.94641 14.7109 8.84529 14.8709C8.74417 15.0309 8.59973 15.1589 8.42875 15.24C8.02455 15.4317 7.67918 15.7283 7.42869 16.099C7.17819 16.4696 7.03174 16.9007 7.0046 17.3472C6.97747 17.7938 7.07065 18.2394 7.27443 18.6376C7.4782 19.0359 7.78511 19.3722 8.16313 19.6114C8.54115 19.8506 8.97643 19.984 9.42358 19.9977C9.87072 20.0114 10.3133 19.9048 10.7053 19.6891C11.0972 19.4735 11.4241 19.1566 11.6518 18.7715C11.8796 18.3865 11.9998 17.9474 12 17.5V1C12 0.734784 12.1054 0.48043 12.2929 0.292893C12.4804 0.105357 12.7348 0 13 0H18C18.2652 0 18.5196 0.105357 18.7071 0.292893C18.8946 0.48043 19 0.734784 19 1C19.0017 2.59079 19.6343 4.11595 20.7592 5.24081C21.884 6.36567 23.4092 6.99835 25 7C25.2652 7 25.5196 7.10536 25.7071 7.29289C25.8946 7.48043 26 7.73478 26 8Z"
+                  fill="white" />
+              </svg></a>
+            <a class="btn p-3" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="27"
+                viewBox="0 0 26 27" fill="none">
+                <path
+                  d="M16.0725 15.6496L18.9475 17.0846C18.8112 17.7656 18.4429 18.3782 17.9054 18.8179C17.3679 19.2576 16.6945 19.4972 16 19.4959C13.6139 19.4932 11.3262 18.5442 9.63896 16.8569C7.95171 15.1697 7.00265 12.882 7 10.4959C6.99981 9.80229 7.23995 9.13005 7.67958 8.59357C8.1192 8.05708 8.73114 7.68951 9.41125 7.55339L10.8462 10.4284L9.625 12.2459C9.53374 12.3828 9.47767 12.5401 9.46175 12.7038C9.44583 12.8676 9.47056 13.0327 9.53375 13.1846C10.2492 14.8851 11.602 16.2379 13.3025 16.9534C13.4549 17.0194 13.6213 17.0464 13.7867 17.032C13.9521 17.0176 14.1113 16.9622 14.25 16.8709L16.0725 15.6496ZM26 13.4959C26.0005 15.7403 25.4199 17.9466 24.3147 19.9001C23.2095 21.8535 21.6174 23.4876 19.6934 24.6432C17.7693 25.7988 15.5788 26.4365 13.3352 26.4944C11.0915 26.5523 8.87107 26.0283 6.89 24.9734L2.63375 26.3921C2.28136 26.5097 1.9032 26.5267 1.54166 26.4414C1.18012 26.3561 0.849484 26.1717 0.586814 25.9091C0.324144 25.6464 0.139818 25.3158 0.0544969 24.9542C-0.0308244 24.5927 -0.0137696 24.2145 0.10375 23.8621L1.5225 19.6059C0.595185 17.8624 0.0772463 15.9306 0.00799667 13.9571C-0.061253 11.9836 0.320007 10.0202 1.12284 8.21606C1.92567 6.41189 3.12897 4.81432 4.6414 3.54463C6.15383 2.27494 7.93564 1.36648 9.85158 0.888232C11.7675 0.40998 13.7672 0.374496 15.699 0.784474C17.6307 1.19445 19.4436 2.03912 21.0001 3.25435C22.5566 4.46959 23.8158 6.02345 24.6822 7.79801C25.5485 9.57256 25.9992 11.5212 26 13.4959ZM21 16.4959C21.0001 16.3101 20.9485 16.128 20.8509 15.9699C20.7533 15.8118 20.6136 15.684 20.4475 15.6009L16.4475 13.6009C16.29 13.5224 16.1147 13.4869 15.9391 13.4979C15.7635 13.5088 15.594 13.5659 15.4475 13.6634L13.6112 14.8884C12.7683 14.425 12.0746 13.7313 11.6112 12.8884L12.8363 11.0521C12.9337 10.9057 12.9908 10.7361 13.0018 10.5605C13.0127 10.385 12.9772 10.2096 12.8988 10.0521L10.8988 6.05214C10.8159 5.88473 10.6877 5.74388 10.5289 5.64557C10.37 5.54726 10.1868 5.4954 10 5.49589C8.67392 5.49589 7.40215 6.02267 6.46447 6.96035C5.52678 7.89804 5 9.16981 5 10.4959C5.00331 13.4123 6.1633 16.2082 8.22548 18.2704C10.2877 20.3326 13.0836 21.4926 16 21.4959C16.6566 21.4959 17.3068 21.3666 17.9134 21.1153C18.52 20.864 19.0712 20.4957 19.5355 20.0314C19.9998 19.5671 20.3681 19.0159 20.6194 18.4093C20.8707 17.8027 21 17.1525 21 16.4959Z"
+                  fill="white" />
+              </svg></a>
           </div>
 
-          <div class="col-md-7 d-flex justify-content-between align-items-center">
-            <a href="#section1" class="font-chelsea text-button">Home</a>
-            <a href="#section2" class="font-chelsea text-button">Product</a>
-            <a href="#section3" class="font-chelsea text-button">About
-              Us</a>
-            <a href="#section4" class="font-chelsea text-button">Distribution</a>
-            <a href="#section5" class="font-chelsea text-button">Quality</a>
-            <a href="#section6" class="font-chelsea text-button">Order</a>
-            <a href="#section7" class="font-chelsea text-button">Grow</a>
+          <div class="col-12 col-lg-7">
+            <div class="row d-flex flex-row justify-content-md-between justify-content-start">
+              <a href="#Beranda" class="col-4 col-lg-auto btn">Home</a>
+              <a href="#Product" class="col-4 col-lg-auto btn">Product</a>
+              <a href="#About-us" class="col-4 col-lg-auto btn">About
+                Us</a>
+              <a href="#Shipping" class="col-4 col-lg-auto btn">Distribute</a>
+              <a href="#Source" class="col-4 col-lg-auto btn">Quality</a>
+              <a href="#Custom-order" class="col-4 col-lg-auto btn">Order</a>
+              <a href="#Growing" class="col-4 col-lg-auto btn">Grow</a>
+            </div>
           </div>
         </div>
-        <p class="font-chelsea copyright text-center mt-3">© 2024
+        <p class="desc copyright text-center mt-5">© 2024
           Copyright TWAS Team. All rights reserved.</p>
       </footer>
     </section>
   </div>
-
-  <!-- 👇 javascript code file 👇 -->
   <script src="./node_modules/fullpage.js/vendors/easings.js"></script>
   <script type="text/javascript" src="./node_modules/fullpage.js/dist/fullpage.js"></script>
   <script src="./src/js/index.js"></script>

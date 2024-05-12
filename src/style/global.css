@@ -84,7 +84,7 @@ nav a {
 
 /* Hero Section */
 
-.hero {
+#hero .hero {
   background-repeat: no-repeat;
   background-position: center 90%;
   background-size: cover;
@@ -93,16 +93,14 @@ nav a {
   border-radius: 30px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  margin: 0 .75rem;
 }
-
-.hero .items {
+#hero .items {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
-#hero-item {
+#hero img {
   margin-top: 10vh;
+  width: clamp(50rem, 1dvw, 100rem);
 }
 
 /* End Hero Section */
@@ -319,7 +317,7 @@ nav a {
 
 #grow .heading {
   color: #2e2e2e;
-  width: clamp(25rem, 0.5dvw, 100rem);;
+  width: clamp(25rem, 0.5dvw, 100rem);
   font-size: clamp(4.5rem, 0.5dvw, 100rem);
   text-align: start;
 }
@@ -329,66 +327,44 @@ nav a {
   font-size: clamp(1rem, 1.5dvw, 100rem);
   text-align: start;
 }
-/* #grow img {
-  width: 640px;
-  height: 640px;
-  flex-shrink: 0;
-} */
-/* end of grow section */
 
 /* Footer section */
 
 #footer .desc {
-  font-size: 1.4vw;
+  font-size: clamp(1rem, 1dvw, 100rem);
   color: #b1b1b1;
 }
 
-#footer .subtitle {
+#footer .title {
+  margin-bottom: 0;
   color: #2e2e2e;
-  font-size: 1.45vw;
+  font-size: clamp(1rem, 1.5dvw, 100rem);
 }
-
-#footer hr {
-  border: 1px solid #b1b1b1;
-}
-
-/* 
-.glowingTitle {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glowingTitle 1s ease-in-out infinite alternate;
-} */
-
-.copyright {
-  color: #b1b1b1;
-  font-size: 1.1vw;
-  letter-spacing: -0.6px;
-}
-
-.font-chelsea {
-  font-family: "Chelsea Market";
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.text-button {
-  text-decoration: none;
-  font-size: 1.4vw;
+#footer .btn {
   color: #b1b1b1;
 }
 
-.text-button:hover {
-  color: #000;
+#footer .btn:hover {
+  color: #2e2e2e;
   transition: 0.5s;
 }
 
-.text-button:active {
-  color: #000;
+#footer .btn:active {
+  color: #2e2e2e;
+}
+#footer .btn:has(svg) {
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #b1b1b1;
+}
+
+#footer .btn:has(svg):hover {
+  background-color: #2e2e2e;
+  transition: 0.5s;
+}
+
+#footer .btn:has(svg):active {
+  background-color: #2e2e2e;
 }
 
 .button {
@@ -448,6 +424,9 @@ nav a {
   
 }
 @media screen and (max-width: 1440px) {
+  #hero .items img {
+    margin-top: 10vh;
+  }
   #about .heading {
     color: #2e2e2e;
     font-size: clamp(4rem, 0.5dvw, 100rem);
@@ -484,6 +463,24 @@ nav a {
   }
 }
 @media screen and (max-width: 1024px) {
+  #hero .items img {
+    margin-top: 0;
+    width: clamp(30rem, 1dvw, 100rem);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  #hero .items {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  #hero .hero {
+    background-repeat: no-repeat;
+    background-position: center 90%;
+    background-size: cover;
+    height: 59dvh;
+    background-image: url(../assets/images/hero.webp);
+    border-radius: 30px;
+  }
   #customize .special-order-bg {
     background: url(../assets/images/special-order1.webp)rgba(0, 0, 0, 0.20);
     /* background-size: cover; */
@@ -528,9 +525,18 @@ nav a {
     width: auto;
     font-size: clamp(1rem, 2.5dvw, 100rem);
   }
+  #footer .btn {
+    text-align: start;
+    color: #b1b1b1;
+  }
 }
 @media screen and (max-width: 768px) {
-  
+  #hero .items img {
+    margin-top: 0;
+    width: clamp(30rem, 1dvw, 100rem);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
   nav.responsive {
     position: relative;
   }
@@ -627,6 +633,7 @@ nav a {
     text-align: center;
     width: 100%;
   }
+  
 }
 
 @-webkit-keyframes glowingTitle {
