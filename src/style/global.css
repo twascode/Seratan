@@ -117,7 +117,9 @@ nav a {
   line-height: normal;
   letter-spacing: -0.72px;
 }
-
+/* #items #no-slides {
+  visibility: hidden;
+} */
 #items .heading {
   color: #2e2e2e;
   font-size: clamp(5rem, 0.5dvw, 100rem);

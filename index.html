@@ -19,6 +19,7 @@
     <!-- Assets -->
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="./src/style/global.css" />
+    <link rel="stylesheet" href="./src/style/animation.css" />
     <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/fullpage.css" />
 
     <!-- Google Fonts -->
@@ -43,16 +44,6 @@
 
 <body>
   <div class="custom-cursor"></div>
-
-  <!-- <header  class="d-flex align-items-center justify-content-center position-fixed z-2 w-100 bg-white">
-    <nav class="d-flex align-items-center justify-content-center z-2 w-100 bg-white">
-      <a href="#" class="d-flex align-items-center text-dark justify-content-center text-decoration-none text-center">
-        <img src="./src/assets/images/Seratan.svg" width="70%" alt="seratan-logo">
-        
-      </a>
-    </nav>
-  </header> -->
-
   <div id="fullpage">
     <section id="hero" class="section">
       <div class="container-fluid ">
@@ -74,47 +65,56 @@
       </div>
     </section>
     <section id="items" class="section">
-      <div id="no-slides" class="d-none d-md-flex justify-content-center">
+      <div id="no-slides" class="d-none d-md-flex justify-content-center overflow-hidden">
         <div class="container-fluid">
           <div class="product row mt-4">
-            <p class="items-heading flex">
+            <p class="slide-in-top items-heading flex">
               Best Product
               <img src="./src/assets/images/Vector 1.svg" alt style="width: 60px; height:auto; margin-left: 14px;">
             </p>
             <div class="row">
               <div class="col-md-8">
-                <h5 class="heading">Our Best Product</h5>
+                <h5 class="slide-in-left heading">Our Best Product</h5>
               </div>
-              <div class="col-md-4 text-end d-none d-md-block">
-                <a href="#" class="button">See All Product</a>
+              <div class="slide-in-right col-md-4 text-end d-none d-md-block">
+                <a href="#" class="button ">See All Product</a>
               </div>
             </div>
             <div class="col-md-3 prod">
               <a href="">
-                <img src="./src/assets/images/bangku.webp" alt class="product-card">
-                <h5 class="heading product-title pt-3 mx-3">Midang Chair</h5>
-                <p class="mx-3">Chairs</p>
+                <img src="./src/assets/images/bangku.webp" alt class="slide-in-left product-card">
+                <div class="slide-in-bottom">
+                  <h5 class="heading product-title pt-3 mx-3">Midang Chair</h5>
+                  <p class="mx-3">Chairs</p>
+                </div>
               </a>
             </div>
             <div class="col-md-3 prod">
               <a href="">
-                <img src="./src/assets/images/meja.webp" alt class="product-card">
-                <h5 class="heading product-title pt-3 mx-3">Menggawe Table</h5>
-                <p class="mx-3">Table</p>
+                <img src="./src/assets/images/meja.webp" alt class="slide-in-left product-card">
+                <div class="slide-in-bottom">
+                  <h5 class="heading product-title pt-3 mx-3">Menggawe Table</h5>
+                  <p class="mx-3">Table</p>
+                </div>
+
               </a>
             </div>
             <div class="col-md-3 prod">
               <a href="">
-                <img src="./src/assets/images/laci.webp" alt class="product-card">
-                <h5 class="heading product-title pt-3 mx-3">Nice Bupet</h5>
-                <p class="mx-3">Cabinets</p>
+                <img src="./src/assets/images/laci.webp" alt class="slide-in-right product-card">
+                <div class="slide-in-bottom">
+                  <h5 class="heading product-title pt-3 mx-3">Nice Bupet</h5>
+                  <p class="mx-3">Cabinets</p>
+                </div>
               </a>
             </div>
             <div class="col-md-3 prod">
               <a href="">
-                <img src=" ./src/assets/images/kursi.webp" alt class="product-card">
-                <h5 class="heading product-title pt-3 mx-3">Relax Bale</h5>
-                <p class="mx-3">Chairs</p>
+                <img src=" ./src/assets/images/kursi.webp" alt class="slide-in-right product-card">
+                <div class="slide-in-bottom">
+                  <h5 class="heading product-title pt-3 mx-3">Relax Bale</h5>
+                  <p class="mx-3">Chairs</p>
+                </div>
               </a>
             </div>
           </div>
