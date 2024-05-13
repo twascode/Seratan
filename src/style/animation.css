@@ -1,34 +1,53 @@
 .slide-in-left {
     visibility: hidden;
+    transition: 1s;
 }
 .slide-in-top {
     visibility: hidden;
+    transition: 1s;
 }
 .slide-in-right {
 	visibility: hidden;
+    transition: 1s;
 }
 .slide-in-bottom {
     visibility: hidden;
+    transition: 1s;
 }
-.active #no-slides .slide-in-bottom {
+.active  .slide-in-bottom {
     visibility: visible;
 	-webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
 	        animation: slide-in-bottom 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
 }
-.active #no-slides .slide-in-right {
+.active  .slide-in-right {
     visibility: visible;
 	-webkit-animation: slide-in-right 2s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
 	        animation: slide-in-right 2s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
 }
-.active #no-slides .slide-in-top {
+.active  .slide-in-right.delay-1 {
+    visibility: visible;
+	-webkit-animation: slide-in-right 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+	        animation: slide-in-right 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+.active  .slide-in-top {
     visibility: visible;
     -webkit-animation: slide-in-top 2s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
             animation: slide-in-top 2s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
 }
-.active #no-slides .slide-in-left {
+.active  .slide-in-top.delay-1 {
+    visibility: visible;
+    -webkit-animation: slide-in-top 2.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+            animation: slide-in-top 2.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+.active  .slide-in-left {
     visibility: visible;
     -webkit-animation: slide-in-left 2s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
             animation: slide-in-left 2s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+.active  .slide-in-left.delay-1 {
+    visibility: visible;
+    -webkit-animation: slide-in-left 3s cubic-bezier(0.075, 0.820, 0.165, 1.000)  both;
+            animation: slide-in-left 3s cubic-bezier(0.075, 0.820, 0.165, 1.000)  both;
 }
 @-webkit-keyframes slide-in-top {
     0% {
