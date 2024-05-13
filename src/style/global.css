@@ -40,6 +40,11 @@ p {
   line-height: normal;
 }
 
+object{
+  overflow: visible!important;
+  overflow-clip-margin: 20px!important;
+}
+
 /* html, 
 body, */
 .heading span  {
