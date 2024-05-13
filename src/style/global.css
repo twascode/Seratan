@@ -285,9 +285,11 @@ nav a {
   font-size: clamp(4.5rem, 5.5dvw, 100rem);
   text-align: center;
 }
+#customize .content{
+  width: clamp(40rem, 50dvw, 100rem);
+}
 #customize p {
   color: #b1b1b1;
-  width: clamp(40rem, 50dvw, 100rem);
   font-size: clamp(1rem, 1.5dvw, 100rem);
   text-align: justify;
 }
@@ -444,23 +446,21 @@ nav a {
     font-size: clamp(6rem, 0.5dvw, 100rem);
     text-align: center;
   }
-  #customize .content{
-    padding-top: 0.5rem!important;
-  }
   #customize .heading {
     color: #2e2e2e;
     font-size: clamp(5.1rem, 5.5dvw, 100rem);
     text-align: center;
   }
+  #customize .content{
+    padding-top: 0;
+    width: 46rem;
+  }
   #customize p {
     color: #b1b1b1;
-    width: 46rem;
-    /* width: clamp(40rem, 50dvw, 100rem); */
     font-size: 1.35rem;
     text-align: justify;
   }
   #customize .button {
-    width: 46rem;
     font-size: 1.35rem;
   }
 }
@@ -507,6 +507,9 @@ nav a {
     -webkit-text-stroke-color: #f4f4f4;
     text-align: center;
   }
+  /* #customize .content{
+    width: clamp(5rem, 50dvw, 100rem);
+  } */
   #customize p {
     color: #f4f4f4!important;
     /* width: 46rem; */

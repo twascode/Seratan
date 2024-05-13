@@ -14,6 +14,22 @@
     visibility: hidden;
     transition: 1s;
 }
+#grow .slide-in-left {
+    visibility: visible;
+    transition: 1s;
+}
+#grow .slide-in-top {
+    visibility: visible;
+    transition: 1s;
+}
+#grow .slide-in-right {
+	visibility: visible;
+    transition: 1s;
+}
+#grow .slide-in-bottom {
+    visibility: visible;
+    transition: 1s;
+}
 .active  .slide-in-bottom {
     visibility: visible;
 	-webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
