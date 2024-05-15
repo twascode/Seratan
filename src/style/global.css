@@ -96,12 +96,6 @@ nav a {
   height: 95dvh;
   background-image: url(../assets/images/hero.webp);
   border-radius: 30px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-#hero .items {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 #hero img {
   margin-top: 10vh;
@@ -473,12 +467,6 @@ nav a {
   #hero .items img {
     margin-top: 0;
     width: clamp(30rem, 1dvw, 100rem);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  #hero .items {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
   #hero .hero {
     background-repeat: no-repeat;
@@ -544,8 +532,6 @@ nav a {
   #hero .items img {
     margin-top: 0;
     width: clamp(30rem, 1dvw, 100rem);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
   nav.responsive {
     position: relative;
