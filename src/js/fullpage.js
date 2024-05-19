@@ -247,7 +247,8 @@
     */
 
     function showError(type, text) {
-      win.console && win.console[type] && win.console[type]('fullPage: ' + text);
+      // win.console && win.console[type] && win.console[type]('fullPage: ' + text);
+      // console.log("tes")
     }
     function isVisible(el) {
       var style = win.getComputedStyle(el);
